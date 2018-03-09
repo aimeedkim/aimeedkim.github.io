@@ -1,3 +1,8 @@
+body {
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=69750) 25 25, auto;
+	background-color: #F6FEA0;
+}
+
 button{
     position:absolute;
     top:10px;
@@ -6,4 +11,8 @@ button{
     height: 40px;
     color: white;
     background-color: hotpink;
+    font-weight: bold;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: white;
 }
