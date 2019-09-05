@@ -25,7 +25,7 @@ $(document).ready(function(){
   ];
 
   var randomFactIndex = Math.floor(Math.random() * funFacts.length);
-  $('#preloader-title').text("Tony's Fun Fact #"+(randomFactIndex+1));
+  $('#preloader-title').text("Did You Know #"+(randomFactIndex+1));
   $('#preloader-content').html(funFacts[randomFactIndex]);
 
   // $('#template-to-top').setAttribute("data-aos","fade-up");
