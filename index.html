@@ -23,7 +23,7 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<!-- jQuery bootstrap.min.js  -->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
@@ -31,13 +31,13 @@
 
     <!-- Stylesheet -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel = "stylesheet" type = "text/css" href = "../css/style.css" />
-    <link rel = "stylesheet" type = "text/css" href = "../css/fonts.css" />
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "./css/fonts.css" />
 
     <link rel="shortcut icon" type="image/x-icon" href="../assets/icon-tab.ico">
 
     <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
-    <script src="../js/script.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script type="text/javascript">
@@ -78,7 +78,7 @@
       <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
         <ul class="nav navbar-nav">
           <li><a class="selected hvr-underline-from-left" href="#my-work">Projects</a></li>
-          <li><a class="hvr-underline-from-left" href="../assets/file.pdf" target="_blank">Resume</a></li>
+          <li><a class="hvr-underline-from-left" href="assets/file.pdf" target="_blank">Resume</a></li>
           <li><a class="hvr-underline-from-left" href="https://medium.com/" target="_blank">Link</a></li>
           <li><a class="hvr-underline-from-left" href="about-me.html">About Me</a></li>
         </ul>
@@ -87,10 +87,19 @@
 
     <div class="container-fluid col-centered col-lg-7 col-md-7 col-sm-9 col-xs-12">
       <p class="p-center-wrapper">
-        <img id="tshape" data-aos="fade-up" data-aos-duration="1000" src="../assets/portfolio-T-shape-new.pngg" alt="">
+        <img id="tshape" data-aos="fade-up" data-aos-duration="1000" src="assets/new.png" alt="">
       </p>
       <p class="p-center-wrapper portfolio-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-        Hey I'm <span class="highlight-link">Aimee</span>,<br>
+        Hey there! I'm <span class="highlight-link">Aimee</span>, I love
+
+        <div class="slidingVertical portfolio-title">
+          <span>user experience design.</span>
+          <span>amazing food places.</span>
+          <span>health and technology.</span>
+          <span>photography.</span>
+          <span>cats.</span>
+        </div>
+
       </p>
       <div class="arrow bounce" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-offset="-300"><a href="#my-work"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a></div>
     </div>
@@ -108,16 +117,16 @@
 
         <a href="./works/eatxplore.html">
           <li data-aos="fade-up" data-aos-duration="600" class="thumbnail-grid-item">
-            <div class="card" style="background-image: url(../assets/portfolio-eatxplore-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
+            <div class="card" style="background-image: url(assets/portfolio-thumbnail-holder.png); background-size: contain; background-repeat: no-repeat;">
               <div class="card-pants">
                 <h4 class="card-title">
-                  Eatxplore
+                  Project Title
                 </h4>
                 <h5 class="card-subtitle">
-                  UX/UI Design, Motion Design, Crowdsourcing
+                  Responsible Role, Role, Role
                 </h5>
                 <p class="card-content">
-                  Breaking the Cultural Barriers of Food
+                  Description Bacon Pork Loin Leberkas Pork Swine Shank
                 </p>
               </div>
             </div>
@@ -126,132 +135,57 @@
 
         <a href="./works/photos.html">
           <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" class="thumbnail-grid-item">
-            <div class="card"  style="background-image: url(../assets/portfolio-photos-thumbnail-1.png); background-size: contain; background-repeat: no-repeat;">
+            <div class="card"  style="background-image: url(./assets/portfolio-thumbnail-holder.png); background-size: contain; background-repeat: no-repeat;">
               <div class="card-pants">
                 <h4 class="card-title">
-                  Google Photos Redesign
+                  Project Title
                 </h4>
                 <h5 class="card-subtitle">
-                  UX/UI Design, Motion Design, AI
+                  Responsible Role, Role, Role
                 </h5>
                 <p class="card-content">
-                  Better discover and compare your best memories with Photo Groups.
+                  Description Bacon Pork Loin Leberkas Pork Swine Shank
                 </p>
               </div>
             </div>
           </li>
         </a>
 
-        <a href="./works/mirror-mirror.html">
+        <a href="works/mirror-mirror.html">
           <li data-aos="fade-up" data-aos-duration="600" data-aos-offset="-50" class="thumbnail-grid-item">
-            <div class="card" style="background-image: url(../assets/portfolio-walker-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
+            <div class="card" style="background-image: url(./assets/portfolio-thumbnail-holder.png); background-size: contain; background-repeat: no-repeat;">
               <div class="card-pants">
                 <h4 class="card-title">
-                  Mirror Mirror
+                  Project Title
                 </h4>
                 <h5 class="card-subtitle">
-                  UX Design, UX Research, AI
+                  Responsible Role, Role, Role
                 </h5>
                 <p class="card-content">
-                  Using AI to Cultivate Mindfulness in Personal Finance Management
+                  Description Bacon Pork Loin Leberkas Pork Swine Shank
                 </p>
               </div>
             </div>
           </li>
         </a>
 
-        <a href="./works/THD.html">
+        <a href="works/THD.html">
           <li data-aos="fade-up" data-aos-duration="600" data-aos-offset="-50" data-aos-delay="200" class="thumbnail-grid-item">
-            <div class="card" style="background-image: url(../assets/portfolio-THD-thumbnail-web.png); background-size: contain; background-repeat: no-repeat;">
+            <div class="card" style="background-image: url(assets/portfolio-thumbnail-holder.png); background-size: contain; background-repeat: no-repeat;">
               <div class="card-pants">
                 <h4 class="card-title">
-                  My Home Depot Internship
+                  Project Title
                 </h4>
                 <h5 class="card-subtitle">
-                  UX/UI Design, UX Research, Internship
+                  Responsible Role, Role, Role
                 </h5>
                 <p class="card-content">
-                  What I learned and what I could have done during my Home Depot internship.
+                  Description Bacon Pork Loin Leberkas Pork Swine Shank
                 </p>
               </div>
             </div>
           </li>
         </a>
-
-
-
-        <a href="./works/cook-fresh.html">
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-offset="-50" class="thumbnail-grid-item">
-            <div class="card"  style="background-image: url(../assets/portfolio-CookFresh-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
-              <div class="card-pants">
-                <h4 class="card-title">
-                  Cook Fresh
-                </h4>
-                <h5 class="card-subtitle">
-                  Voice User Interface Design
-                </h5>
-                <p class="card-content">
-                  Smart Cooking Assistant that Reduces Food Waste
-                </p>
-              </div>
-            </div>
-          </li>
-        </a>
-
-        <a href="./works/up-up.html">
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-offset="-50" class="thumbnail-grid-item">
-            <div class="card"  style="background-image: url(../assets/portfolio-up-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
-              <div class="card-pants">
-                <h4 class="card-title">
-                  Up & Up
-                </h4>
-                <h5 class="card-subtitle">
-                  UX Design, Motion Design, UX Research
-                </h5>
-                <p class="card-content">
-                  Collective Breathing Game for Stress Relief
-                </p>
-              </div>
-            </div>
-          </li>
-        </a>
-
-        <a href="./works/rei-backpack.html">
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-offset="-50" class="thumbnail-grid-item">
-            <div class="card"  style="background-image: url(../assets/portfolio-REI-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
-              <div class="card-pants">
-                <h4 class="card-title">
-                  REI Backpack Finder
-                </h4>
-                <h5 class="card-subtitle">
-                  UX/UI Design, UX Research
-                </h5>
-                <p class="card-content">
-                  Helping Novice Backpackers Find the Perfect Backpack
-                </p>
-              </div>
-            </div>
-          </li>
-        </a>
-
-        <a href="./works/thriller.html">
-          <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-offset="-50"  class="thumbnail-grid-item">
-            <div class="card"  style="background-image: url(../assets/portfolio-thriller-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
-              <div class="card-pants">
-                <h4 class="card-title">
-                  The Resurrected
-                </h4>
-                <h5 class="card-subtitle">
-                  VR Experience Design, VR Development
-                </h5>
-                <p class="card-content">
-                  VR Dancing/Imitation Experience in Oculus Rift
-                </p>
-              </div>
-            </div>
-          </li>
-        </a>
-
 
 
 
@@ -265,7 +199,7 @@
     <div class="container-fluid">
       <div class="row footer-row">
         <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <p class="footer-text">Designed and Handcoded with ♥ and ♫</p>
+          <p class="footer-text">Designed and stitched together by Aimee with ♥ </p>
         </div>
         <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <p>
