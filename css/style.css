@@ -2013,126 +2013,71 @@ h6 {
   color: #4c525a;
 }
 
-/****************sliding vertical*********/
+/* --------------------------------------------------------------
+ * ## text rotator
+ * -------------------------------------------------------------- */
 
-
-.slidingVertical {
-  display:inline;
-  text-indent:8px
+/*Vertical Sliding*/
+.slidingVertical{
+  font-family: 'Circular Std Black' !important;
+  font-size: 2.2vw;
+  color: var(--primary-black);
+  text-align: center;
+  margin-bottom: 1.5vh;
 }
 
-.slidingVertical span {
-  animation:topToBottom 12.5s
-  linear infinite 0s;
-  -ms-animation:topToBottom 12.5s linear infinite 0s;
-  -webkit-animation:topToBottom 12.5s linear infinite 0s;
-  color:#B7B2CC;opacity:0;
-  overflow:hidden;
-  position:absolute
+.slidingVertical span{
+	animation: bottomToTop 7.5s linear infinite 0s;
+	-ms-animation: bottomToTop 7.5s linear infinite 0s;
+	-webkit-animation: bottomToTop 7.5s linear infinite 0s;
+	color: #B7b2cc;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+  top: auto;
+  right: 0;
+  left: 0;
+}
+.slidingVertical span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
 }
 
-  .slidingVertical span:nth-child(2){
-    animation-delay:2.5s;
-    -ms-animation-delay:2.5s;
-    -webkit-animation-delay:2.5s
-  }
 
-  .slidingVertical span:nth-child(3){
-    animation-delay:5s;
-    -ms-animation-delay:5s;
-    -webkit-animation-delay:5s
-    }
-
-  .slidingVertical span:nth-child(4){
-    animation-delay:7.5s;
-    -ms-animation-delay:7.5s;
-    -webkit-animation-delay:7.5s
-  }
-  .slidingVertical span:nth-child(5){
-    animation-delay:10s;
-    -ms-animation-delay:10s;
-    -webkit-animation-delay:10s
-    }
-    @-moz-keyframes topToBottom {
-      0% {
-        opacity:0
-        }
-      5% {
-        opacity:0;
-        -moz-transform:translatey(-50px)
-        }
-      10% {opacity:1;
-        -moz-transform:translatey(0px)
-        }
-      25% {
-        opacity:1;
-        -moz-transform:translatey(0px)
-       }
-      30% {
-        opacity:0;
-        -moz-transform:translatey(50px)
-        }
-      80% {
-        opacity:0
-        }
-      100% {opacity:0
-      }
-    }
-
-    @-webkit-keyframes topToBottom {
-      0% {
-        opacity:0
-        }
-      5% {
-        opacity:0;
-        -webkit-transform:translatey(-50px)
-        }
-      10% {
-        opacity:1;
-        -webkit-transform:translatey(0px)
-        }
-      25% {
-        opacity:1;
-        -webkit-transform:translatey(0px)
-        }
-      30% {
-        opacity:0;
-        -webkit-transform:translatey(50px)
-        }
-      80% {
-        opacity:0
-        }
-      100% {
-        opacity:0
-        }
-      }
-
-    @-ms-keyframes topToBottom{
-      0% {
-        opacity:0
-        }
-      5% {
-        opacity:0;
-        -ms-transform:translatey(-50px)
-        }
-      10% {
-        opacity:1;
-        -ms-transform:translatey(0px)
-        }
-      25% {
-        opacity:1;
-        -ms-transform:translatey(0px)
-        }
-      30% {opacity:0;
-        -ms-transform:translatey(50px)
-        }
-      80% {
-        opacity:0
-        }
-      100% {
-        opacity:0
-        }
-      }
+/*topToBottom Animation*/
+@-moz-keyframes bottomToTop{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(-50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes bottomToTop{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(-50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes bottomToTop{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(-50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
 
 
 /*******************IDs*******************/
